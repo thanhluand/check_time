@@ -1,76 +1,45 @@
 //
 //  HomeViewModel.swift
-//  GithubUser
+//  Time Check
 //
 //  Created by Dang Luan on 2024/08/05.
 //
 
 import Foundation
 
-protocol HomeViewModelDelegate: AnyObject {
-    func didFetchData()
-}
-
-class HomeViewModel {
+class HomeViewModel: ObservableObject {
     
-    weak var delegate: HomeViewModelDelegate?
+    @Published var timeCheckedes: [TimeChecked] = []
     
-    var usersList: [User] = []
-    var paging = -1
-    var lastSearchContent = ""
-    var isFetching = false
-    
-    var lastIndex: Int {
-        get {
-            return usersList.count
-        }
-    }
-    
-    func refreshData() {
-        paging = -1
-        usersList = []
-        getUser(searchContent: lastSearchContent)
-    }
-    
-    func getUser(searchContent: String) {
-        if (lastSearchContent != searchContent) {
-            usersList = []
-            paging = -1
-        }
-        if (searchContent.isEmpty) {
-            isFetching = true
-            APIClient.request(endpoint: UserEndPoint.getUsers(since: lastIndex, perPage: Constants.Common.MaxRequestItem)) { [weak self] (result: Result<[User], AppError>) in
-                guard let self = self else { return }
-                switch result {
-                case .success(let datas):
-                    self.usersList.append(contentsOf: datas)
-                    isFetching = false
-                    delegate?.didFetchData()
-                    print("Success: append \(datas.count)")
-                case .failure(let error):
-                    isFetching = false
-                    print("failure: \(error)")
-                    // TODO: handle error here
-                }
-            }
+    func checkData(startTime: Int16, endTime: Int16, checkTime: Int16) {
+        var result = false
+        if(startTime == endTime && startTime == checkTime) {
+            result = true
+        } else if (startTime < endTime){
+            result = checkTime >= startTime && checkTime < endTime
         } else {
-            paging += 1
-            isFetching = true
-            APIClient.request(endpoint: UserEndPoint.searchUsers(keyword: searchContent, page: paging, perPage: Constants.Common.MaxRequestItem)) { [weak self] (result: Result<SearchUser, AppError>) in
-                guard let self = self else { return }
-                switch result {
-                case .success(let datas):
-                    self.usersList.append(contentsOf: datas.items)
-                    isFetching = false
-                    delegate?.didFetchData()
-                    print("Success: append \(datas.items.count)")
-                case .failure(let error):
-                    isFetching = false
-                    print("failure: \(error)")
-                    // TODO: handle error here
-                }
-            }
+            result = checkTime >= startTime || checkTime < endTime
         }
-        lastSearchContent = searchContent
+        
+        addTimeChecked(startTime: startTime, endTime: endTime, checkTime: checkTime, result: result)
+    }
+    
+    func getAllTimeCheckeds() {
+        timeCheckedes =  CoreDataManager.shared.getAllTimeCheckeds().sorted( by: { $0.createdAt.timeIntervalSince1970 > $1.createdAt.timeIntervalSince1970 })
+    }
+    
+    private func addTimeChecked(startTime: Int16, endTime: Int16, checkTime: Int16, result: Bool) {
+        CoreDataManager.shared.addTimeChecked(startTime: startTime, endTime: endTime, checkTime: checkTime, result: result)
+        getAllTimeCheckeds()
+    }
+    
+    private func updateTimeChecked() {
+        CoreDataManager.shared.saveContext()
+        getAllTimeCheckeds()
+    }
+    
+    private func deleteTimeChecked(timeChecked: TimeChecked) {
+        CoreDataManager.shared.deleteTimeChecked(data: timeChecked)
+        getAllTimeCheckeds()
     }
 }

@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		C491ABCE2C9C199200074DA5 /* Check Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Check Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C491ABFF2C9C208000074DA5 /* Check Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Check Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C491ABE02C9C199300074DA5 /* Exceptions for "Check Time" folder in "Check Time" target */ = {
+		C491AC142C9C208100074DA5 /* Exceptions for "Check Time" folder in "Check Time" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = C491ABCD2C9C199200074DA5 /* Check Time */;
+			target = C491ABFE2C9C208000074DA5 /* Check Time */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C491ABD02C9C199200074DA5 /* Check Time */ = {
+		C491AC012C9C208000074DA5 /* Check Time */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C491ABE02C9C199300074DA5 /* Exceptions for "Check Time" folder in "Check Time" target */,
+				C491AC142C9C208100074DA5 /* Exceptions for "Check Time" folder in "Check Time" target */,
 			);
 			path = "Check Time";
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C491ABCB2C9C199200074DA5 /* Frameworks */ = {
+		C491ABFC2C9C208000074DA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C491ABC52C9C199200074DA5 = {
+		C491ABF62C9C208000074DA5 = {
 			isa = PBXGroup;
 			children = (
-				C491ABD02C9C199200074DA5 /* Check Time */,
-				C491ABCF2C9C199200074DA5 /* Products */,
+				C491AC012C9C208000074DA5 /* Check Time */,
+				C491AC002C9C208000074DA5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C491ABCF2C9C199200074DA5 /* Products */ = {
+		C491AC002C9C208000074DA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C491ABCE2C9C199200074DA5 /* Check Time.app */,
+				C491ABFF2C9C208000074DA5 /* Check Time.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C491ABCD2C9C199200074DA5 /* Check Time */ = {
+		C491ABFE2C9C208000074DA5 /* Check Time */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C491ABE12C9C199300074DA5 /* Build configuration list for PBXNativeTarget "Check Time" */;
+			buildConfigurationList = C491AC152C9C208100074DA5 /* Build configuration list for PBXNativeTarget "Check Time" */;
 			buildPhases = (
-				C491ABCA2C9C199200074DA5 /* Sources */,
-				C491ABCB2C9C199200074DA5 /* Frameworks */,
-				C491ABCC2C9C199200074DA5 /* Resources */,
+				C491ABFB2C9C208000074DA5 /* Sources */,
+				C491ABFC2C9C208000074DA5 /* Frameworks */,
+				C491ABFD2C9C208000074DA5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C491ABD02C9C199200074DA5 /* Check Time */,
+				C491AC012C9C208000074DA5 /* Check Time */,
 			);
 			name = "Check Time";
 			packageProductDependencies = (
 			);
 			productName = "Check Time";
-			productReference = C491ABCE2C9C199200074DA5 /* Check Time.app */;
+			productReference = C491ABFF2C9C208000074DA5 /* Check Time.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C491ABC62C9C199200074DA5 /* Project object */ = {
+		C491ABF72C9C208000074DA5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					C491ABCD2C9C199200074DA5 = {
+					C491ABFE2C9C208000074DA5 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = C491ABC92C9C199200074DA5 /* Build configuration list for PBXProject "Check Time" */;
+			buildConfigurationList = C491ABFA2C9C208000074DA5 /* Build configuration list for PBXProject "Check Time" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C491ABC52C9C199200074DA5;
+			mainGroup = C491ABF62C9C208000074DA5;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C491ABCF2C9C199200074DA5 /* Products */;
+			productRefGroup = C491AC002C9C208000074DA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C491ABCD2C9C199200074DA5 /* Check Time */,
+				C491ABFE2C9C208000074DA5 /* Check Time */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C491ABCC2C9C199200074DA5 /* Resources */ = {
+		C491ABFD2C9C208000074DA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C491ABCA2C9C199200074DA5 /* Sources */ = {
+		C491ABFB2C9C208000074DA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C491ABE22C9C199300074DA5 /* Debug */ = {
+		C491AC162C9C208100074DA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -148,12 +148,11 @@
 				DEVELOPMENT_TEAM = 5ZQFJM3RY5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Check Time/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Check Time";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -172,7 +171,7 @@
 			};
 			name = Debug;
 		};
-		C491ABE32C9C199300074DA5 /* Release */ = {
+		C491AC172C9C208100074DA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -182,12 +181,11 @@
 				DEVELOPMENT_TEAM = 5ZQFJM3RY5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Check Time/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Check Time";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -206,7 +204,7 @@
 			};
 			name = Release;
 		};
-		C491ABE42C9C199300074DA5 /* Debug */ = {
+		C491AC182C9C208100074DA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +267,7 @@
 			};
 			name = Debug;
 		};
-		C491ABE52C9C199300074DA5 /* Release */ = {
+		C491AC192C9C208100074DA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,25 +326,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C491ABC92C9C199200074DA5 /* Build configuration list for PBXProject "Check Time" */ = {
+		C491ABFA2C9C208000074DA5 /* Build configuration list for PBXProject "Check Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C491ABE42C9C199300074DA5 /* Debug */,
-				C491ABE52C9C199300074DA5 /* Release */,
+				C491AC182C9C208100074DA5 /* Debug */,
+				C491AC192C9C208100074DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C491ABE12C9C199300074DA5 /* Build configuration list for PBXNativeTarget "Check Time" */ = {
+		C491AC152C9C208100074DA5 /* Build configuration list for PBXNativeTarget "Check Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C491ABE22C9C199300074DA5 /* Debug */,
-				C491ABE32C9C199300074DA5 /* Release */,
+				C491AC162C9C208100074DA5 /* Debug */,
+				C491AC172C9C208100074DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C491ABC62C9C199200074DA5 /* Project object */;
+	rootObject = C491ABF72C9C208000074DA5 /* Project object */;
 }
